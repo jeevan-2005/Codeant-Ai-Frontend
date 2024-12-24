@@ -1,5 +1,5 @@
-import SideBar from '../SideBar'
-import NotFound from '../NotFound'
+import SideBar from "../SideBar";
+import NotFound from "../NotFound";
 
 const Support = () => {
   return (
@@ -7,7 +7,7 @@ const Support = () => {
       <SideBar activeInd={5} />
       <NotFound />
     </div>
-  )
-}
+  );
+};
 
 export default Support;
