@@ -11,7 +11,7 @@ import { RxCross2 } from "react-icons/rx";
 import logo from "../assets/Images/logo.png";
 import { useEffect, useRef, useState } from "react";
 
-const SideBar = ({activeInd}) => {
+const SideBar = ({ activeInd }) => {
   const [isSideBarVisible, setIsSideBarVisible] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const isMobileRef = useRef(false);
@@ -43,7 +43,7 @@ const SideBar = ({activeInd}) => {
     <div className="flex flex-col w-full md:w-[242px] bg-white md:h-screen border-r fixed md:static font-inter">
       <div
         className={`flex items-center justify-between md:justify-around w-full px-5 ${
-          isMobile &&( !isSideBarVisible && "border-b border-gray-200")
+          isMobile && !isSideBarVisible && "border-b border-gray-200"
         }`}
       >
         <div className="flex items-center gap-3 justify-center h-[69px] cursor-pointer">
