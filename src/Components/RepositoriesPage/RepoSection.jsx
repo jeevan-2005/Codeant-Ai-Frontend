@@ -4,7 +4,6 @@ import { IoIosSearch } from "react-icons/io";
 import { useState } from "react";
 import RepoInfo from "./RepoInfo";
 
-
 const RepoSection = () => {
   const [search, setSearch] = useState("");
   return (
