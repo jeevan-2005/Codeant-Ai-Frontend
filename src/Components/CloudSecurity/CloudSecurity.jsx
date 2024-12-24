@@ -1,5 +1,5 @@
-import NotFound from '../NotFound'
-import SideBar from '../SideBar'
+import NotFound from "../NotFound";
+import SideBar from "../SideBar";
 
 const CloudSecurity = () => {
   return (
@@ -7,7 +7,7 @@ const CloudSecurity = () => {
       <SideBar activeInd={2} />
       <NotFound />
     </div>
-  )
-}
+  );
+};
 
-export default CloudSecurity
+export default CloudSecurity;
