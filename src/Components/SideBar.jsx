@@ -11,11 +11,11 @@ import { RxCross2 } from "react-icons/rx";
 import logo from "../assets/Images/logo.png";
 import { useEffect, useRef, useState } from "react";
 
-const SideBar = () => {
+const SideBar = ({activeInd}) => {
   const [isSideBarVisible, setIsSideBarVisible] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const isMobileRef = useRef(false);
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(activeInd);
 
   useEffect(() => {
     const handleResize = () => {
@@ -86,7 +86,7 @@ const SideBar = () => {
 
           <nav className="flex-1 md:w-[210px] w-[90%] m-auto mt-4 space-y-2">
             <a
-              href="#"
+              href="/repositories"
               onClick={() => setActiveIndex(0)}
               className={`flex items-center px-[14px] py-[10px] text-[16px] text-gray-700 rounded-lg hover:bg-gray-100 ${
                 activeIndex === 0 && "!bg-[#1570EF] !text-white"
@@ -98,7 +98,7 @@ const SideBar = () => {
               <span className="ml-3">Repositories</span>
             </a>
             <a
-              href="#"
+              href="/ai-code-review"
               onClick={() => setActiveIndex(1)}
               className={`flex items-center px-[14px] py-[10px] text-[16px] text-gray-700 rounded-lg hover:bg-gray-100 ${
                 activeIndex === 1 && "!bg-[#1570EF] !text-white"
@@ -110,7 +110,7 @@ const SideBar = () => {
               <span className="ml-3">AI Code Review</span>
             </a>
             <a
-              href="#"
+              href="/cloud-security"
               onClick={() => setActiveIndex(2)}
               className={`flex items-center px-[14px] py-[10px] text-[16px] text-gray-700 rounded-lg hover:bg-gray-100 ${
                 activeIndex === 2 && "!bg-[#1570EF] !text-white"
@@ -122,7 +122,7 @@ const SideBar = () => {
               <span className="ml-3">Cloud Security</span>
             </a>
             <a
-              href="#"
+              href="/guide"
               onClick={() => setActiveIndex(3)}
               className={`flex items-center px-[14px] py-[10px] text-[16px] text-gray-700 rounded-lg hover:bg-gray-100 ${
                 activeIndex === 3 && "!bg-[#1570EF] !text-white"
@@ -134,7 +134,7 @@ const SideBar = () => {
               <span className="ml-3">How to Use</span>
             </a>
             <a
-              href="#"
+              href="/settings"
               onClick={() => setActiveIndex(4)}
               className={`flex items-center px-[14px] py-[10px] text-[16px] text-gray-700 rounded-lg hover:bg-gray-100 ${
                 activeIndex === 4 && "!bg-[#1570EF] !text-white"
@@ -149,7 +149,7 @@ const SideBar = () => {
 
           <div className="space-y-2 md:w-[210px] w-[90%] m-auto my-2">
             <a
-              href="#"
+              href="/support"
               onClick={() => setActiveIndex(5)}
               className={`flex items-center px-[14px] py-[10px] text-[16px] text-gray-700 rounded-lg hover:bg-gray-100 ${
                 activeIndex === 5 && "!bg-[#1570EF] !text-white"
@@ -161,7 +161,7 @@ const SideBar = () => {
               <span className="ml-3">Support</span>
             </a>
             <a
-              href="#"
+              href="/"
               onClick={() => setActiveIndex(6)}
               className={`flex items-center px-[14px] py-[10px] text-[16px] text-gray-700 rounded-lg hover:bg-gray-100 ${
                 activeIndex === 6 && "!bg-[#1570EF] !text-white"
