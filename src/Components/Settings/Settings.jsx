@@ -1,5 +1,5 @@
-import SideBar from '../SideBar'
-import NotFound from '../NotFound'
+import SideBar from "../SideBar";
+import NotFound from "../NotFound";
 
 const Settings = () => {
   return (
@@ -7,7 +7,7 @@ const Settings = () => {
       <SideBar activeInd={4} />
       <NotFound />
     </div>
-  )
-}
+  );
+};
 
 export default Settings;
