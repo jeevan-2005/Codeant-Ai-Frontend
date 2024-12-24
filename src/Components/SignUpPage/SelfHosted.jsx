@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import gitlab from "../../assets/Images/gitlab.png";
 
 const SelfHosted = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <div className="space-y-4 my-5 md:w-[60%] w-[90%] m-auto mb-[151px]">
       <button
