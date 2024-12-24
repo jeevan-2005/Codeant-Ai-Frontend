@@ -1,5 +1,5 @@
-import SideBar from '../SideBar'
-import NotFound from '../NotFound'
+import SideBar from "../SideBar";
+import NotFound from "../NotFound";
 
 const Guide = () => {
   return (
@@ -7,7 +7,7 @@ const Guide = () => {
       <SideBar activeInd={3} />
       <NotFound />
     </div>
-  )
-}
+  );
+};
 
-export default Guide
+export default Guide;
